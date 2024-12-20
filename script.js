@@ -15,17 +15,37 @@ function hash_string(string) {
 
 function ukaz_napovedu() {
     const date_show = new Date("January 11, 2025 23:00:00");
+    // const date_show = new Date("December 20, 2024 20:57:00");
+
 
     const date_now = new Date();
     let time_show = date_show.getTime();
     let time_now = date_now.getTime();
 
-    if (time_now >= time_show) {
+    // Ukaz odpocet
+    
+    if (time_now <= time_show) {
+        let rozdil = time_show - time_now;
+        let h = Math.floor((rozdil % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        let m = Math.floor((rozdil % (1000 * 60 * 60)) / (1000 * 60));
+        let s = Math.floor((rozdil % (1000 * 60)) / 1000);
+
+        let text = "za ";
+
+        if (h != 0) text += h + "h ";
+        if (m != 0) text += m + "m ";
+        text += s + "s";
+        document.getElementById("odpocet").textContent = text;
+
+    }
+    else {
+        // Ukaz napovedu ve 23:00
         let napoveda = "5c69626d66636928626d2878616469";
 
         const myDecipher = decipher("mySecretSalt");
 
         document.getElementById("napoveda").textContent = myDecipher(napoveda);
+        document.getElementById("odpocet").textContent = "";
     }
     setTimeout(ukaz_napovedu, 1000);
 }
