@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Special+Elite&display=swap');
+
+body {
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-color: #8EC5FC;
+    background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
+    font-family: "Roboto", serif;
+    text-align: center;
+    margin-top: 2em;
+    font-size: 1.3em;
+    color: black;
+}
+
+main > * {
+    margin: 0.5em;
+}
+
+h1 {
+    font-family: "Special Elite", serif;
+}
+
+input {
+    background-color: whitesmoke;
+    border-radius: 10em;
+}
+
+img {
+    height: auto;
+    width: 100%;
+    text-align: center;
+}
+
+#info {
+    color: red;
+    background-color: #00000022;
+    padding: 0.4em;
+    border-radius: 0.3em;
+    font-size: 1.2em;
+}
+
+img {
+    height: auto;
+    width: 100%;
+    max-width: max-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+input {
+    height: 2em;
+    width: 75%;
+    font-family: "Roboto", serif;
+    font-size: 1.3em;
+    border-radius: 0.25em;
+    background-color: #00000011;
+    border-color: #00000055;
+    border-style: solid;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+}
+
+button {
+    height: 2em;
+    width: 75%;
+    font-family: "Roboto", serif;
+    font-size: 1.3em;
+    border-radius: 0.25em;
+    background-color: #ffffff55;
+    border-color: #00000055;
+    border-style: solid;
+    color: darkgreen;
+}
