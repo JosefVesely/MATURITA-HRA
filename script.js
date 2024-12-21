@@ -1,4 +1,17 @@
 
+function unfade(element) {
+    var op = 0.1;  // initial opacity
+    element.style.display = 'block';
+    var timer = setInterval(function () {
+        if (op >= 1){
+            clearInterval(timer);
+        }
+        element.style.opacity = op;
+        element.style.filter = 'alpha(opacity=' + op * 100 + ")";
+        op += op * 0.1;
+    }, 10);
+}
+
 function hash_string(string) {
     let hash = 0;
     if (string.length == 0) return hash;
@@ -69,15 +82,21 @@ function submit() {
     if (hash_string(input) == tajenka) {
         // spravne
         image.style.display = "block";
+        unfade(image);
+
         info.style.display = "block";
         info.innerHTML = "Správně!";
         info.style.color = "green";
+
+        unfade(info);
     } else {
         // spatne
         image.style.display = "none";
         info.style.display = "block";
         info.innerHTML = "Tohle není správná odpověď<br>Zkus to znovu";
         info.style.color = "red";
+
+        unfade(info);
     }
 }
 
