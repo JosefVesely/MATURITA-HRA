@@ -73,5 +73,11 @@ button {
 }
 
 button:active {
-    background-color: lightskyblue;
+    background-color: blue;
+}
+button:focus {
+    background-color: red;
+}
+button:hover {
+    background-color: green;
 }
