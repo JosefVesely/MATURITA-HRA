@@ -80,6 +80,7 @@ function submit() {
     image = document.getElementById("obrazek")
 
     if (hash_string(input) == tajenka) {
+        alert("Spravne");
         // spravne
         image.style.display = "block";
         unfade(image);
@@ -90,6 +91,7 @@ function submit() {
 
         unfade(info);
     } else {
+        alert("*spatne* <h1>test</h1>");
         // spatne
         image.style.display = "none";
         info.style.display = "block";

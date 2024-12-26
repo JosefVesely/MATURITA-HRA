@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hra začne ve 22:00</title>
+    <script>
+        function zpatky() {
+            const date = new Date();
+
+            if ([22, 23, 0, 1].includes(date.getHours())) {
+                history.back()
+            }
+
+            setTimeout(get_back, 1000);
+        }
+    </script>
+</head>
+<body onload="zpatky()">
+    <h1>Hra začne ve 22:00</h1>
+</body>
+</html>
