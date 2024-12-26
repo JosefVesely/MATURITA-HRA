@@ -71,3 +71,7 @@ button {
     border-style: solid;
     color: darkgreen;
 }
+
+button:active {
+    background-color: lightskyblue;
+}
