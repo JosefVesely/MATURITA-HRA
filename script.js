@@ -27,8 +27,8 @@ function hash_string(string) {
 // console.log("Hash tajenky: " + hash_string("pila"))
 
 function ukaz_napovedu() {
-    const date_show = new Date("January 11, 2025 23:00:00");
-    // const date_show = new Date("December 20, 2024 20:57:00");
+    // const date_show = new Date("January 11, 2025 23:00:00"); ZMENIT!!!!!!!
+    const date_show = new Date("December 27, 2024 23:00:00");
 
 
     const date_now = new Date();
@@ -87,6 +87,8 @@ function submit() {
         info.style.display = "block";
         info.innerHTML = "Správně!";
         info.style.color = "green";
+        info.style.borderColor = "green";
+        info.style.backgroundColor = "lightgreen";
 
         unfade(info);
     } else {
@@ -95,6 +97,8 @@ function submit() {
         info.style.display = "block";
         info.innerHTML = "Tohle není správná odpověď<br>Zkus to znovu";
         info.style.color = "red";
+        info.style.borderColor = "red";
+        info.style.backgroundColor = "#fadbd8";
 
         unfade(info);
     }
