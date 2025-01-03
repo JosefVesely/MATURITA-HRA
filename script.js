@@ -13,8 +13,8 @@ function unfade(element) {
 }
 
 function ukaz_napovedu() {
-    // const date_show = new Date("January 11, 2025 23:00:00"); // ZMENIT!!!!!!!
-    const date_show = new Date("December 27, 2024 23:00:00");
+    const date_show = new Date("January 11, 2025 23:00:00"); // ZMENIT!!!!!!!
+    // const date_show = new Date("December 27, 2024 23:00:00");
 
     const date_now = new Date();
     let time_show = date_show.getTime();
@@ -28,17 +28,17 @@ function ukaz_napovedu() {
         let m = Math.floor((rozdil % (1000 * 60 * 60)) / (1000 * 60));
         let s = Math.floor((rozdil % (1000 * 60)) / 1000);
 
-        let text = "Nápověda se zobrazí za ";
+        let text = "Nápověda se zobrazí za<br>";
 
         if (h != 0) text += h + "h ";
         if (m != 0) text += m + "m ";
         text += s + "s";
-        document.getElementById("napoveda").textContent = text;
+        document.getElementById("napoveda").innerHTML = text;
     }
     else {
         // Ukaz napovedu ve 23:00
 
-        let napoveda = "Pod světlem je největší tma. Tajenka se skládá z nejtučnějších písmen v předpise.<br>&nbsp;Ale pozor, je nutné jednotlivá písmena po nalezení ještě poskládat ve správném pořadí.";
+        let napoveda = "NÁPOVĚDA:<br>&nbsp;Pod světlem je největší tma. Tajenka se skládá z nejtučnějších písmen v předpise.<br>&nbsp;Ale pozor, je nutné jednotlivá písmena po nalezení ještě poskládat ve správném pořadí.";
 
         document.getElementById("napoveda").innerHTML = napoveda;
     }
