@@ -38,7 +38,7 @@ function ukaz_napovedu() {
     else {
         // Ukaz napovedu ve 23:00
 
-        let napoveda = "<p>&nbsp;Pod světlem je největší tma. Tajenka se skládá z nejtučnějších písmen v předpise.</p><p>&nbsp;Ale pozor, je nutné jednotlivá písmena po nalezení ještě poskládat ve správném pořadí.</p>";
+        let napoveda = "Pod světlem je největší tma. Tajenka se skládá z nejtučnějších písmen v předpise.<br>&nbsp;Ale pozor, je nutné jednotlivá písmena po nalezení ještě poskládat ve správném pořadí.";
 
         document.getElementById("napoveda").innerHTML = napoveda;
     }
