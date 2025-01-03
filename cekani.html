@@ -4,19 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hra začne ve 22:00</title>
+    <link rel="stylesheet" href="cekani.css">
     <script>
         function zpatky() {
             const date = new Date();
 
             if ([22, 23, 0, 1].includes(date.getHours())) {
-                history.back()
+                window.location.href = "index.html"
             }
 
-            setTimeout(get_back, 1000);
+            console.log('test');
+
+            setTimeout(zpatky, 1000);
         }
     </script>
 </head>
 <body onload="zpatky()">
-    <h1>Hra začne ve 22:00</h1>
+    <h1>Uteč z vězení!</h1>
+    <h2>Hra začne ve 22:00</h2>
 </body>
 </html>

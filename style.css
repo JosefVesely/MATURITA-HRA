@@ -2,17 +2,35 @@
 body {
     background-repeat: no-repeat;
     background-attachment: fixed;
-    /* background-image: linear-gradient(0deg, #D9AFD9 0%, #97D9E1 100%); */
+/* 
+    background-color: #8BC6EC; */
+    /* background-image: linear-gradient(135deg, #ffffff 0%, #fbd0b5 100%); */
 
-    /* #ff8d1e , #fe7300 */
-    background-color: #fe7300;
-    background-image: linear-gradient(145deg, #fe7300 0%, #ff972f 100%);
+    background-color: #f3faff;
+    background-image: linear-gradient(135deg, #f3faff 0%, #d1d3ff 100%);
+
 
     font-family: "Noto Sans", serif;
     text-align: center;
-    margin-top: 2em;
+    /* margin-top: 2em; */
     font-size: 1.3em;
     color: black;
+}
+
+#logo {
+    width: 300px;
+    height: auto;
+}
+
+p {
+    line-height: 1.5em;
+    text-align: left;
+}
+
+#napoveda {
+    margin-top: 0;
+    margin-bottom: 1em;
+    text-align: center;
 }
 
 main > * {
@@ -22,7 +40,7 @@ main > * {
 h1 {
     font-family: "Special Elite", serif;
     font-size: 2.3em;
-    color: #333;
+    color: orangered;
 }
 
 input {
@@ -39,6 +57,7 @@ img {
 #info {
     border: solid red 0.1em;
     background-color: white;
+    text-align: center;
     padding: 0.4em;
     border-radius: 0.3em;
     font-size: 1.2em;
