@@ -7,14 +7,19 @@ body {
     /* background-image: linear-gradient(135deg, #ffffff 0%, #fbd0b5 100%); */
 
     background-color: #f3faff;
-    background-image: linear-gradient(135deg, #f3faff 0%, #d1d3ff 100%);
+    background-image: linear-gradient(135deg, #fff9e6 0%, #f7ca90 100%);
 
 
     font-family: "Noto Sans", serif;
     text-align: center;
     /* margin-top: 2em; */
+    margin-bottom: 10em;
     font-size: 1.3em;
     color: black;
+}
+
+#obrazek {
+    border: 3px solid green;
 }
 
 #logo {
