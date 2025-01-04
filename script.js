@@ -75,7 +75,7 @@ function submit() {
         // spatne
         image.style.display = "none";
         info.style.display = "block";
-        info.innerHTML = "Tohle není správná odpověď<br>Zkus to znovu";
+        info.innerHTML = "Tohle není tajenka<br>Zkus to znovu";
         info.style.color = "red";
         info.style.borderColor = "red";
         info.style.backgroundColor = "#fadbd8";
