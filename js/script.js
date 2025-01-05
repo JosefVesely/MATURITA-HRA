@@ -31,9 +31,11 @@ function ukaz_napovedu(napoveda) {
     }
     else {
         // Ukaz napovedu ve 23:00
-        document.getElementById("napoveda").innerHTML = napoveda;
+        document.getElementById("napoveda").innerHTML = "NÁPOVĚDA:<br>" + napoveda;
     }
-    setTimeout(ukaz_napovedu, 1000);
+    // setTimeout(ukaz_napovedu(napoveda), 1000);
+    setTimeout(ukaz_napovedu.bind(null, napoveda), 1000);
+
 }
 
 function zkontroluj(tajenka) {
@@ -49,7 +51,7 @@ function zkontroluj(tajenka) {
         unfade(image);
 
         info.style.display = "block";
-        info.innerHTML = "Uhádl jsi správně! <br>Další indicie hledej podle mapy:";
+        info.innerHTML = "Uhádl/a jsi správně! <br>Další indicie hledej podle mapy:";
         info.style.color = "green";
         info.style.borderColor = "green";
         info.style.backgroundColor = "lightgreen";

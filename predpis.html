@@ -9,7 +9,7 @@
     <title>Úteč z vězení - Oktáva 2024/25</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body onload="ukaz_napovedu()">
+<body onload="ukaz_napovedu('Tajenka se skládá z nejtučnějších písmen v předpise.<br>Písmena jsou přeházená.')">
     <main>
         <img id="logo" src="img/logo.png">
         
@@ -17,11 +17,12 @@
         <p>&nbsp;Od spoluvězňů máš informace, že vězeňský doktor šifruje do lékařských předpisů zprávy. </p>
         <p>&nbsp;Stejným způsobem lze posílat necenzurované dopisy ven.</p>
         <p>&nbsp;Najdeš způsob, kterým doktor zprávy schovává a vyluštíš tajné slovo z předpisu níže?</p>
-        <p><i>&nbsp;Pokud tě nic nenapadá, ve 23:00 se zde objeví nápověda, jak na to.</i></p>
+        
+        <p><i>&nbsp;Pokud tě nic nenapadá, ve 23:00 se ukáže nápověda.</i></p>
 
         <p id="napoveda"></p>
 
-        <input type="text" id="vstup" placeholder="Tajenka">
+        <input type="text" id="vstup" placeholder="Tajné slovo">
         <button id="zkontrolovat" onclick="zkontroluj('bachar')">Zkontrolovat</button>
 
         <p id="info" style="display: none"></p>

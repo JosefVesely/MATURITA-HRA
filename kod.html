@@ -1,0 +1,34 @@
+<!-- KOD -->
+
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <script src="js/script.js"></script>
+    <title>Úteč z vězení - Oktáva 2024/25</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body onload="ukaz_napovedu('Policejní auto je číslo sedm.')">
+    <main>
+        <img id="logo" src="img/logo.png">
+        
+        <p>&nbsp;Nacházíš se v kanceláři ředitele věznice. Potřebuješ se dostat do sejfu a ukrást klíč k vězeňské bráně. </p>
+        <p>&nbsp;Sejf je ale zaheslovaný 4-ciferným číselným kódem. Naštěstí si toho ředitel moc nepamatuje a tak si kód napsal na papírek, který má na stole. </p>
+        <p>&nbsp;Je to ale chytrý člověk, kód napsal v hádankách. Zvládneš najít kód a dostat se dál? </p>
+
+        <p><i>&nbsp;Pokud tě nic nenapadá, ve 23:00 se ukáže nápověda.</i></p>
+
+        <p id="napoveda"></p>
+
+        <input type="text" id="vstup" placeholder="Kód">
+        <button id="zkontrolovat" onclick="zkontroluj('7457')">Zkontrolovat</button>
+
+        <p id="info" style="display: none"></p>
+        <img id="mapa" style="display: none" src="img/prizemi.png">
+
+        <img src="img/kod1.jpg">
+        <img src="img/kod2.jpg">
+    </main>
+</body>
+</html>
