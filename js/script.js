@@ -1,10 +1,10 @@
 // Jestli nebylo 10, presmeruj na jinou stranku
 const date = new Date();
 
-if (![21, 22, 23, 0, 1].includes(date.getHours())) { // ZMENIT!!!!
-    window.location.replace("cekani.html");
-}
-
+// if (![22, 23, 0, 1].includes(date.getHours())) {
+//     window.location.replace("cekani.html");
+// }
+// ZMENIT!!!
 
 function ukaz_napovedu(napoveda) {
     const date_show = new Date("January 11, 2025 23:00:00"); // ZMENIT!!!!!!!
