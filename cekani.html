@@ -4,16 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hra začne ve 22:00</title>
-    <link rel="stylesheet" href="cekani.css">
+    <link rel="stylesheet" href="css/cekani.css">
     <script>
         function zpatky() {
             const date = new Date();
 
             if ([22, 23, 0, 1].includes(date.getHours())) {
-                window.location.href = "index.html"
+                document.getElementById("text").innerHTML = "Hra začala! <br><br>Naskenuj libovolný QR kód a začni hrát."
             }
-
-            console.log('test');
 
             setTimeout(zpatky, 1000);
         }
@@ -21,6 +19,6 @@
 </head>
 <body onload="zpatky()">
     <h1>Uteč z vězení!</h1>
-    <h2>Hra začne ve 22:00</h2>
+    <h2 id="text">Hra začne ve 22:00</h2>
 </body>
 </html>

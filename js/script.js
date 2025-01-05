@@ -1,18 +1,12 @@
+// Jestli nebylo 10, presmeruj na jinou stranku
+const date = new Date();
 
-function unfade(element) {
-    var op = 0.1;  // initial opacity
-    element.style.display = 'block';
-    var timer = setInterval(function () {
-        if (op >= 1){
-            clearInterval(timer);
-        }
-        element.style.opacity = op;
-        element.style.filter = 'alpha(opacity=' + op * 100 + ")";
-        op += op * 0.1;
-    }, 10);
+if (![21, 22, 23, 0, 1].includes(date.getHours())) { // ZMENIT!!!!
+    window.location.replace("cekani.html");
 }
 
-function ukaz_napovedu() {
+
+function ukaz_napovedu(napoveda) {
     const date_show = new Date("January 11, 2025 23:00:00"); // ZMENIT!!!!!!!
     // const date_show = new Date("December 27, 2024 23:00:00");
 
@@ -37,49 +31,56 @@ function ukaz_napovedu() {
     }
     else {
         // Ukaz napovedu ve 23:00
-
-        let napoveda = "NÁPOVĚDA:<br>&nbsp;Pod světlem je největší tma. Tajenka se skládá z nejtučnějších písmen v předpise.<br>&nbsp;Ale pozor, je nutné jednotlivá písmena po nalezení ještě poskládat ve správném pořadí.";
-
         document.getElementById("napoveda").innerHTML = napoveda;
     }
     setTimeout(ukaz_napovedu, 1000);
 }
 
-function submit() {
-    let tajenka = "bachar";
-    const CASE_SENSITIVE = false;
-
+function zkontroluj(tajenka) {
     let input = document.getElementById("vstup").value;
-    if (!CASE_SENSITIVE)
-        input = input.toLowerCase();
+    input = input.trim().toLowerCase(); // Zbav se zbytecnych mezer
+    input = input.normalize("NFD").replace(/[\u0300-\u036f]/g, ""); // Zbav se diakritiky
 
-    input = input.trim() // Zbav se zbytecnych mezer
-    input = input.normalize("NFD").replace(/[\u0300-\u036f]/g, "") // Zbav se diakritiky
+    info = document.getElementById("info");
+    image = document.getElementById("mapa");
 
-    info = document.getElementById("info")
-    image = document.getElementById("obrazek")
-
-    if (input == tajenka) {
-        // spravne
+    if (input == tajenka) { // spravne
         image.style.display = "block";
         unfade(image);
 
         info.style.display = "block";
-        info.innerHTML = "Správně!";
+        info.innerHTML = "Uhádl jsi správně! <br>Další indicie hledej podle mapy:";
         info.style.color = "green";
         info.style.borderColor = "green";
         info.style.backgroundColor = "lightgreen";
 
         unfade(info);
-    } else {
-        // spatne
+    } else { // Spatne
         image.style.display = "none";
+
         info.style.display = "block";
-        info.innerHTML = "Tohle není tajenka<br>Zkus to znovu";
+        info.innerHTML = "Tohle není správná odpověď<br>Zkus to znovu";
         info.style.color = "red";
         info.style.borderColor = "red";
         info.style.backgroundColor = "#fadbd8";
 
         unfade(info);
     }
+}
+
+
+
+// CSS EFEKTY
+
+function unfade(element) {
+    var op = 0.1;  // initial opacity
+    element.style.display = 'block';
+    var timer = setInterval(function () {
+        if (op >= 1){
+            clearInterval(timer);
+        }
+        element.style.opacity = op;
+        element.style.filter = 'alpha(opacity=' + op * 100 + ")";
+        op += op * 0.1;
+    }, 10);
 }

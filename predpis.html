@@ -1,33 +1,17 @@
+<!-- PREDPIS -->
+
 <!DOCTYPE html>
 <html lang="cs">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <script src="script.js"></script>
+    <script src="js/script.js"></script>
     <title>Úteč z vězení - Oktáva 2024/25</title>
-    <link rel="stylesheet" href="style.css">
-    
-    <!-- <script>
-        const date = new Date();
-
-        if (![22, 23, 0, 1].includes(date.getHours())) {
-            window.location.replace("cekani.html");
-        }
-    </script> -->
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body onload="ukaz_napovedu()">
     <main>
-        <!-- <h1>Uteč z vězení!</h1> -->
-
         <img id="logo" src="img/logo.png">
-        
-        <!-- <p>
-            Dostal/a jsi se do ošetřovny. <br>
-            Od spoluvězňů máš informace, že vězeňský doktor šifruje do lékařských předpisů zprávy. 
-            Stejným způsobem lze posílat necenzurované dopisy ven. <br>
-            Najdeš způsob, kterým doktor zprávy schovává a vyluštíš tajné slovo z předpisu níže? <br>
-            Pokud tě nic nenapadá, ve 23:00 se zde objeví nápověda, jak na to.
-        </p> -->
         
         <p>&nbsp;Dostal/a jsi se do ošetřovny.</p>
         <p>&nbsp;Od spoluvězňů máš informace, že vězeňský doktor šifruje do lékařských předpisů zprávy. </p>
@@ -37,12 +21,11 @@
 
         <p id="napoveda"></p>
 
-        
         <input type="text" id="vstup" placeholder="Tajenka">
-        <button id="zkontrolovat" onclick="submit()">Zkontrolovat</button>
+        <button id="zkontrolovat" onclick="zkontroluj('bachar')">Zkontrolovat</button>
 
         <p id="info" style="display: none"></p>
-        <img id="obrazek" style="display: none" src="img/prizemi.png">
+        <img id="mapa" style="display: none" src="img/prizemi.png">
 
         <img src="img/predpis.png">
     </main>
