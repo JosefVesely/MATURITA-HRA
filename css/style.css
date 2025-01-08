@@ -23,7 +23,7 @@ h1 {
 
 p {
     line-height: 1.5em;
-    font-size: 1.4em;
+    /* font-size: 1.4em; */
     text-align: left;
 }
 
@@ -40,7 +40,8 @@ input {
     background-color: whitesmoke;
     height: 2em;
     width: 75%;
-    font-family: "Roboto", serif;
+    /* font-family: "Roboto", serif; */
+    font-family: "Caveat Brush", serif;
     font-size: 1.3em;
     border-radius: 0.25em;
     background-color: #00000011;
@@ -53,11 +54,12 @@ input {
 button {
     height: 2em;
     width: 75%;
-    font-family: "Roboto", serif;
-    font-size: 1.3em;
+    /* font-family: "Roboto", serif; */
+    font-family: "Caveat Brush", serif;
+    font-size: 1.4em;
     border-radius: 0.25em;
     background-color: lightcyan;
-    border: solid blue 0.1em;
+    border: solid blue 0.15em;
     color: blue;
 }
 
