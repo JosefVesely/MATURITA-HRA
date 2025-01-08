@@ -7,8 +7,8 @@ const date = new Date();
 // ZMENIT!!!
 
 function ukaz_napovedu(napoveda) {
-    const date_show = new Date("January 11, 2025 23:00:00"); // ZMENIT!!!!!!!
-    // const date_show = new Date("December 27, 2024 23:00:00");
+    // const date_show = new Date("January 11, 2025 23:00:00"); // ZMENIT!!!!!!!
+    const date_show = new Date("January 5, 2025 23:00:00");
 
     const date_now = new Date();
     let time_show = date_show.getTime();
@@ -22,7 +22,7 @@ function ukaz_napovedu(napoveda) {
         let m = Math.floor((rozdil % (1000 * 60 * 60)) / (1000 * 60));
         let s = Math.floor((rozdil % (1000 * 60)) / 1000);
 
-        let text = "Nápověda se zobrazí za<br>";
+        let text = "Nápověda se ukáže za ";
 
         if (h != 0) text += h + "h ";
         if (m != 0) text += m + "m ";

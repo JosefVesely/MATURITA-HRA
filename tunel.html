@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <script src="js/script.js"></script>
+    <title>Uteč z vězení - Oktáva 2024/25</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <main>
+        <img id="logo" src="img/logo.png">
+        
+        <p>&nbsp;Jsi na konci. Už ti zbývá jen vykopat tunel pod hranicemi věznice a budeš zase svobodný/á.</p>
+        <p>&nbsp;Pro kopání tunelu je zapotřebí velkého množství náčiní, to lze získat jen pouze pokud se ve věznici dobře orientuješ. Najdeš v osmisměrce všechna slova a zvládneš ze zbylých písmen poskládat světlo na konci tunelu?</p>
+        <p><i>&nbsp;Prosím, vem si pouze jednu osmisměrku a zbylé nech ležet pro další hráče.</i></p>
+        <p><b></i>&nbsp;Tajenku z osmisměrky zadej bez mezer.</b></p>       
+
+        <input type="text" id="vstup" placeholder="Osmisměrka">
+        <button id="zkontrolovat" onclick="zkontroluj('uteklijsme')">Zkontrolovat</button>
+
+        <p id="info" style="display: none"></p>
+        <img id="mapa" style="display: none" src="img/mapy/prizemi.png">
+    </main>
+</body>
+</html>

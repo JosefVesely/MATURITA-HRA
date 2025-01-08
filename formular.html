@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <script src="js/script.js"></script>
+    <title>Uteč z vězení - Oktáva 2024/25</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body onload="ukaz_napovedu('část formuláře - číslo pole - pořadí písmena v odpovědi')">
+    <main>
+        <img id="logo" src="img/logo.png">
+
+        <p><i>&nbsp;Vítej ve hře o nejlepšího útěkáře! Čeká tě několik úkolů, jejichž splněním utečeš z vězení a pokud budeš mezi prvními, jsi ve hře o cenu, kterou nelze běžně koupit.</i></p>
+
+        <p>&nbsp;Jedna z prvních činností po nástupu do věznice je registrace. 
+        <p>&nbsp;Získal/a jsi přístup k již vyplněnému formuláři jiného vězně a zdá se, že není tak úplně nevinný. Najdeš způsob jak ve formuláři najít zašifrovaný kód?</p>
+
+        <p>
+        Vězeň si k formuláři napsal poznámku:<br>
+        1-1-1<br>
+        1-1-3<br>
+        4-1-7<br>
+        2-1-1<br>
+        3-2-2<br>
+        </p>
+
+        <p><i>&nbsp;Pokud tě nic nenapadá, ve 23:00 se ukáže nápověda.</i></p>
+        <p id="napoveda"></p>
+
+        <input type="text" id="vstup" placeholder="Tajenka">
+        <button type="submit" id="zkontrolovat" onclick="zkontroluj('brana')">Zkontrolovat</button>
+
+        <p id="info" style="display: none"></p>
+        <img id="mapa" style="display: none" src="img/mapy/prizemi.png">
+
+        <img src="img/zadani/formular.png">
+    </main>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <script src="js/script.js"></script>
+    <title>Uteč z vězení - Oktáva 2024/25</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body onload="ukaz_napovedu('Může být slepá, poetická nebo krutá,<br>je to nástroj <i>zákona</i>, chová se nestranně,<br><i>morálka</i> nesmí být zapomenuta,<br>i když se vám vždy nezdá <i>správná</i>.<br>')">
+    <main>
+        <img id="logo" src="img/logo.png">
+        
+        <p>&nbsp;A je to, jsi ubytován. A teď přímou cestou ven! Tedy, nejdříve ven z cely, věznice přijde později.</p>
+        <p>&nbsp;Cely jsou uzamčeny jednoduchými hádankami, pokusíš se přijít na tuto?</p>
+        <br>
+        <p><i>
+            Může být slepá, poetická nebo krutá,<br>
+            je to nástroj, chová se nestranně,<br>
+            nesmí být zapomenuta,<br>
+            i když se vám vždy nezdá.<br>
+        </i></p>
+        <br>
+        
+        <p><i>&nbsp;Pokud tě nic nenapadá, ve 23:00 se ukáže nápověda.</i></p>
+
+        <p id="napoveda"></p>
+
+        <input type="text" id="vstup" placeholder="Hádanka">
+        <button id="zkontrolovat" onclick="zkontroluj('spravedlnost')">Zkontrolovat</button>
+
+        <p id="info" style="display: none"></p>
+        <img id="mapa" style="display: none" src="img/mapy/prizemi.png">
+    </main>
+</body>
+</html>
