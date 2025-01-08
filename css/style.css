@@ -8,7 +8,7 @@ body {
     text-align: center;
     margin-bottom: 10em;
     font-size: 1.4em;
-    color: black;
+    color: #222;
 }
 
 main > * {
@@ -42,13 +42,13 @@ input {
     width: 75%;
     /* font-family: "Roboto", serif; */
     font-family: "Caveat Brush", serif;
-    font-size: 1.3em;
+    font-size: 1.6em;
     border-radius: 0.25em;
     background-color: #00000011;
     border-color: #00000055;
     border-style: solid;
-    padding-left: 0.5em;
-    padding-right: 0.5em;
+    padding-left: 0.4em;
+    padding-right: 0.4em;
 }
 
 button {
@@ -57,7 +57,7 @@ button {
     /* font-family: "Roboto", serif; */
     font-family: "Caveat Brush", serif;
     font-size: 1.4em;
-    border-radius: 0.25em;
+    border-radius: 0.5em;
     background-color: lightcyan;
     border: solid blue 0.15em;
     color: blue;
@@ -81,11 +81,17 @@ button {
     background-color: white;
     text-align: center;
     padding: 0.4em;
-    border-radius: 0.3em;
+    border-radius: 0.5em;
     font-size: 1.2em;
 }
 
 #mapa {
     border: 3px solid green;
     box-shadow: none;
+}
+
+p#mapa {
+    padding: 1em;
+    background-color: lightgreen;
+    font-size: 1.3em;
 }

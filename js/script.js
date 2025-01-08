@@ -7,8 +7,8 @@ const date = new Date();
 // ZMENIT!!!
 
 function ukaz_napovedu(napoveda) {
-    const date_show = new Date("January 11, 2025 23:00:00"); // ZMENIT!!!!!!!
-    // const date_show = new Date("January 5, 2025 23:00:00");
+    // const date_show = new Date("January 11, 2025 23:00:00"); // ZMENIT!!!!!!!
+    const date_show = new Date("January 5, 2025 23:00:00");
 
     const date_now = new Date();
     let time_show = date_show.getTime();
