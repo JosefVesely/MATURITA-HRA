@@ -51,7 +51,7 @@ function zkontroluj(tajenka) {
         unfade(image);
 
         info.style.display = "block";
-        info.innerHTML = "Uhádl/a jsi správně! <br>Další indicie hledej podle mapy:";
+        info.innerHTML = "Uhádl/a jsi správně! <br>Další indicie hledej podle mapy (červený bod):";
         info.style.color = "green";
         info.style.borderColor = "green";
         info.style.backgroundColor = "lightgreen";
