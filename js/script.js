@@ -1,9 +1,9 @@
 // Jestli nebylo 10, presmeruj na jinou stranku
 const date = new Date();
 
-if (![22, 23, 0, 1].includes(date.getHours())) {
-    window.location.replace("cekani.html");
- }
+// if (![22, 23, 0, 1].includes(date.getHours())) {
+//     window.location.replace("cekani.html");
+// }
 
 
 function ukaz_napovedu(napoveda) {
